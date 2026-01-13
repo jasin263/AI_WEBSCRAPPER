@@ -84,4 +84,4 @@ The easiest way to deploy is using **Vercel**:
 
 ---
 
-**Built with ❤️ by Antigravity**
+
