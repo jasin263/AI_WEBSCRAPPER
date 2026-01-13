@@ -12,7 +12,7 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ sessions, currentSessionId, onNewChat, onSelectSession, onDeleteSession }: SidebarProps) {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const getCurrentSession = () => sessions.find(s => s.id === currentSessionId);
 
@@ -28,6 +28,14 @@ export default function Sidebar({ sessions, currentSessionId, onNewChat, onSelec
 
     return (
         <>
+            {/* Mobile Backdrop */}
+            {isOpen && (
+                <div
+                    onClick={() => setIsOpen(false)}
+                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 md:hidden animate-in fade-in"
+                />
+            )}
+
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="fixed top-4 left-4 z-50 p-2 text-zinc-400 hover:text-white transition-colors md:hidden"
