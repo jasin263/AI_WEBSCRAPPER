@@ -54,9 +54,6 @@ npm install
 ### 3. Configure Environment
 Create a `.env.local` file in the root directory and add your Google Gemini API key:
 ```env
-GEMINI_API_KEY=AIzaSy...YourKeyHere
-```
-*Tip: Get a free key from [Google AI Studio](https://makersuite.google.com/).*
 
 ### 4. Run the Development Server
 ```bash
@@ -64,18 +61,7 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## 🌍 Deployment
 
-The easiest way to deploy is using **Vercel**:
-
-1.  Push your code to GitHub.
-2.  Import the project into Vercel.
-3.  Add the `GEMINI_API_KEY` in the Vercel Project Settings > Environment Variables.
-4.  Deploy!
-
-*Note: The Free Hobby Plan on Vercel has a 10-second timeout for serverless functions. For heavy scraping tasks, consider upgrading to Pro or self-hosting.*
-
----
 
 ## 🔮 Future Roadmap
 - [ ] **API Generator**: Turn any website into a public JSON API endpoint.
